@@ -11,6 +11,7 @@
       --text: #111827;
       --muted: #6b7280;
       --border: #e5e7eb;
+      --link: #2563eb;
     }
 
     body {
@@ -56,9 +57,24 @@
     }
 
     .subtitle {
-      margin: 0 0 18px;
+      margin: 0 0 14px;
       color: var(--muted);
       font-size: 1rem;
+    }
+
+    .links {
+      margin: 0 0 18px;
+      font-size: 0.95rem;
+    }
+
+    .links a {
+      color: var(--link);
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .links a:hover {
+      text-decoration: underline;
     }
 
     .coming-soon {
@@ -78,6 +94,13 @@
 
       <h1>Hi, I am Kunal Bagga.</h1>
       <p class="subtitle">I work in Computational Neuroscience.</p>
+
+      <p class="links">
+        You can find more information about me on
+        <a href="https://www.linkedin.com/in/kunalbagga/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        and see my recent work on
+        <a href="https://scholar.google.com/citations?user=lg76ZckAAAAJ&hl=en&oi=ao" target="_blank" rel="noopener noreferrer">Google Scholar</a>.
+      </p>
 
       <p class="coming-soon">More information coming soon</p>
     </section>
