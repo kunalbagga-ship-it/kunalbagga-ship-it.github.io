@@ -1,10 +1,86 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
 <head>
-  <title>Kunal Website</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Kunal Bagga — Profile</title>
+  <style>
+    :root {
+      --bg: #f6f7fb;
+      --card: #ffffff;
+      --text: #111827;
+      --muted: #6b7280;
+      --border: #e5e7eb;
+    }
+
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.5;
+    }
+
+    .wrap {
+      min-height: 100vh;
+      display: grid;
+      place-items: center;
+      padding: 24px;
+    }
+
+    .card {
+      width: 100%;
+      max-width: 520px;
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 28px;
+      box-shadow: 0 10px 24px rgba(0,0,0,0.06);
+      text-align: center;
+    }
+
+    .photo {
+      width: 140px;
+      height: 140px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 3px solid var(--border);
+      margin: 0 auto 16px;
+      display: block;
+      background: #eee;
+    }
+
+    h1 {
+      font-size: 1.6rem;
+      margin: 0 0 6px;
+    }
+
+    .subtitle {
+      margin: 0 0 18px;
+      color: var(--muted);
+      font-size: 1rem;
+    }
+
+    .coming-soon {
+      margin: 0;
+      padding-top: 14px;
+      border-top: 1px solid var(--border);
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+  </style>
 </head>
 <body>
-  <h1>Hello World 👋</h1>
-  <p>This site is hosted on GitHub Pages.</p>
+  <main class="wrap">
+    <section class="card" aria-label="Profile card">
+      <!-- Replace photo.jpg with your image file or a URL -->
+      <img class="photo" src="photo.jpg" alt="Photo of Kunal Bagga" />
+
+      <h1>Hi, I am Kunal Bagga.</h1>
+      <p class="subtitle">I work in Computational Neuroscience.</p>
+
+      <p class="coming-soon">More information coming soon</p>
+    </section>
+  </main>
 </body>
 </html>
